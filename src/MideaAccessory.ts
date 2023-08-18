@@ -134,7 +134,7 @@ export class MideaAccessory {
 					validValues: [
 						this.platform.Characteristic.TargetHeaterCoolerState.AUTO,
 						this.platform.Characteristic.TargetHeaterCoolerState.HEAT,
-						this.platform.Characteristic.TargetHeaterCoolerState.COOL
+						this.platform.Characteristic.TargetHeaterCoolerState.COOL,
 					]
 				})
 			this.service.getCharacteristic(this.platform.Characteristic.CurrentTemperature)
@@ -316,6 +316,8 @@ export class MideaAccessory {
 			return this.platform.Characteristic.CurrentHeaterCoolerState.INACTIVE;
 		} else {
 			switch (this.operationalMode) {
+				case ACOperationalMode.Off:
+					return this.platform.Characteristic.CurrentHeaterCoolerState.INACTIVE;
 				case ACOperationalMode.Cooling:
 					if (this.indoorTemperature >= this.targetTemperature) {
 						return this.platform.Characteristic.CurrentHeaterCoolerState.COOLING;
@@ -336,6 +338,8 @@ export class MideaAccessory {
 					} else {
 						return this.platform.Characteristic.CurrentHeaterCoolerState.IDLE;
 					};
+				case ACOperationalMode.FanOnly:
+					return this.platform.Characteristic.CurrentHeaterCoolerState.COOLING;
 				default:
 					return this.platform.Characteristic.CurrentHeaterCoolerState.IDLE;
 			};
