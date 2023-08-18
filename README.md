@@ -75,7 +75,7 @@ You can use the plugin settings or add this to the platforms array in your confi
                     "audibleFeedback": false
                 }
         ],
-        "platform": "midea-air"
+        "platform": "midea-air-ac"
     }
 
 ## ⚙️ Optional per-device Configuration Values

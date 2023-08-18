@@ -54,7 +54,7 @@ export class MigrationHelper {
 	// This method performs the permutation of the config object and removes the old accessory and adds the platform
 	migrate(config: any) {
 		let platformObject = {
-			"platform": "midea-air",
+			"platform": "midea-air-ac",
 			"interval": 30,
 			"user": "",
 			"password": ""
