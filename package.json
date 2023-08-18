@@ -1,0 +1,58 @@
+{
+  "name": "homebridge-midea-air",
+  "version": "1.7.4",
+  "description": "Homebridge plugin for Midea AC units",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mathieu52/homebridge-midea-air.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mathieu52/homebridge-midea-air/issues"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "/lib",
+    "README.md",
+    "LICENSE",
+    "config.schema.json"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "homebridge": ">=1.5.0"
+  },
+  "author": "Yossi Hillali <hillaliy@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "axios-cookiejar-support": "^4.0.3",
+    "node-tunnel": "^4.0.1",
+    "querystring": "^0.2.1",
+    "strftime": "^0.10.1",
+    "tough-cookie": "^4.1.2",
+    "traverse": "^0.6.7",
+    "tunnel": "0.0.6"
+  },
+  "keywords": [
+    "homebridge",
+    "homebridge-plugin",
+    "midea",
+    "midea-ac",
+    "homekit",
+    "air conditioner"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "@types/tough-cookie": "^4.0.2",
+    "@types/tunnel": "0.0.3",
+    "homebridge": "^1.5.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "funding": {
+    "type": "paypal",
+    "url": "https://www.paypal.me/hillaliy"
+  }
+}
