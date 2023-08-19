@@ -4,10 +4,10 @@
   "description": "Homebridge plugin for Midea AC units",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mathieu52/homebridge-midea-air.git"
+    "url": "https://github.com/Mathieu52/homebridge-midea-air-ac.git"
   },
   "bugs": {
-    "url": "https://github.com/Mathieu52/homebridge-midea-air/issues"
+    "url": "https://github.com/Mathieu52/homebridge-midea-air-ac/issues"
   },
   "main": "lib/index.js",
   "files": [
